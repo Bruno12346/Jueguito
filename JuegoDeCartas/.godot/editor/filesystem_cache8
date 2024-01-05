@@ -1,3 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700676331
+::res://::1704473741
 icon.svg::CompressedTexture2D::1968470327847919938::1700676278::1700676335::1::::<><>::
+::res://assets/::1701460638
+carta1_test.png::CompressedTexture2D::2740685972947634061::1701460564::1701460638::1::::<><>::
+::res://scenes/::1701616218
+carta_1.tscn::PackedScene::1151889921780551218::1701616218::0::1::::<><>::uid://bfbuxymye8rwv::::res://assets/carta1_test.png
+mesa.tscn::PackedScene::2757938901084625822::1701616192::0::1::::<><>::
