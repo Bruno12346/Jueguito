@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://bfj736qkqmyxq"]
+[gd_scene load_steps=3 format=3 uid="uid://bfj736qkqmyxq"]
+
+[ext_resource type="PackedScene" uid="uid://bmjb3xvt5kwf8" path="res://scenes/player_1.tscn" id="1_vpl3b"]
+[ext_resource type="PackedScene" uid="uid://c4g3edmkcoxk3" path="res://scenes/player_2.tscn" id="2_0xjb8"]
 
 [node name="mesa" type="Node2D"]
+
+[node name="player1" parent="." instance=ExtResource("1_vpl3b")]
+
+[node name="player_2" parent="." instance=ExtResource("2_0xjb8")]

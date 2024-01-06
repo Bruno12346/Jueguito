@@ -1,9 +1,27 @@
-[gd_scene format=3 uid="uid://bmjb3xvt5kwf8"]
+[gd_scene load_steps=5 format=3 uid="uid://bmjb3xvt5kwf8"]
+
+[ext_resource type="Script" path="res://scripts/player_1.gd" id="1_ndfqx"]
+[ext_resource type="PackedScene" uid="uid://du45ngf1838s4" path="res://scenes/espada.tscn" id="2_oxvlg"]
+[ext_resource type="PackedScene" uid="uid://bnufc7a708ai1" path="res://scenes/escudo.tscn" id="3_fk1tv"]
+[ext_resource type="PackedScene" uid="uid://bk3bjchw8n26s" path="res://scenes/dado.tscn" id="4_q8w5o"]
 
 [node name="player1" type="Node2D"]
+script = ExtResource("1_ndfqx")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 576.0
-offset_bottom = 647.0
+offset_bottom = 648.0
 size_flags_vertical = 4
-color = Color(0.45098, 0.627451, 1, 1)
+color = Color(0.360784, 0.564706, 1, 1)
+
+[node name="espada" parent="." instance=ExtResource("2_oxvlg")]
+position = Vector2(83, 551)
+
+[node name="escudo" parent="." instance=ExtResource("3_fk1tv")]
+position = Vector2(235, 551)
+
+[node name="dado" parent="." instance=ExtResource("4_q8w5o")]
+offset_left = 39.0
+offset_top = 52.0
+offset_right = 86.0
+offset_bottom = 92.0

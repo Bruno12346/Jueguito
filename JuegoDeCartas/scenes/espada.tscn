@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://du45ngf1838s4"]
+
+[ext_resource type="Texture2D" uid="uid://3bsoiaxjqop3" path="res://icon.svg" id="1_7a6l3"]
+[ext_resource type="Script" path="res://scripts/espada.gd" id="1_l8m1p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flplo"]
+size = Vector2(130, 148)
+
+[node name="espada" type="Area2D"]
+script = ExtResource("1_l8m1p")
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.09375, 1)
+texture = ExtResource("1_7a6l3")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(0, 24.5)
+scale = Vector2(0.390625, 0.101562)
+texture = ExtResource("1_7a6l3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_flplo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

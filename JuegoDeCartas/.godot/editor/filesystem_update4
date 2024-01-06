@@ -1,1 +1,4 @@
-res://scenes/player_1.tscn
+res://scripts/espada.gd
+res://scenes/espada.tscn
+res://scenes/dado.tscn
+res://scripts/dado.gd
