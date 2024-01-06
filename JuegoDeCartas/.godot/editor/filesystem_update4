@@ -1,4 +1,8 @@
-res://scripts/espada.gd
+res://scenes/mesa.tscn
+res://scenes/player_1.tscn
+res://scenes/player_2.tscn
 res://scenes/espada.tscn
+res://scenes/escudo.tscn
 res://scenes/dado.tscn
-res://scripts/dado.gd
+res://scripts/espada.gd
+res://scripts/player_1.gd

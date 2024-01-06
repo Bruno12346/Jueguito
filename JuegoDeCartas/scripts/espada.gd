@@ -1,5 +1,7 @@
 extends Node2D
 
+signal definir_ataque(attack)
+
 var dice_in = false
 var dado : dice
 
@@ -11,7 +13,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if dice_in && Input.is_action_just_pressed("lmb"):
-		pass
+		definir_ataque.emit(dado.valor)
 
 
 func _on_body_entered(body):
