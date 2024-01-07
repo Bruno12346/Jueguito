@@ -17,3 +17,4 @@ func _process(delta):
 
 func _on_espada_definir_ataque(attack):
 	ataque = attack
+	print(ataque)
